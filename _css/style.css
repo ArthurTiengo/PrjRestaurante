@@ -55,6 +55,10 @@ a{
     text-decoration: none;
 }
 
+.box-arrow-down a{
+    color: var(--yellow);
+}
+
 header ul li a{
     padding: 10px;
     color: var(--vine);
@@ -126,6 +130,24 @@ header ul li{
     transition: all ease .4s;
 }
 
+.controls-slide{
+    margin: auto;
+    display: flex;
+    width: 40vw;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -2rem;
+}
+
+.controls-slide i{
+    font-size: 2rem;
+    color: var(--yellow);
+    opacity: .6;
+    cursor: pointer;
+    text-shadow: 1px 1px 20px #000;
+    transition: all ease .2s;
+}
+
 .banner{
     display: flex;
     align-items: center;
@@ -154,8 +176,45 @@ header ul li{
     color: #fff;
     font-family: "Rum Raisin", sans-serif;
 }
-
+/*:first-child = seleciona o primeiro filho dentro do elemento pai.
+:nth-child() = permite especificar qual o filho e o elemento filho deseja ser selecionado. Exemplo:nth-child(2) irá selecionar apenas o filho na segunda posição dentro do elemento pia*/
 .description-banner p:first-child{
     font-family: "Rum Raisin",sans-serif;
     font-size: 1.9rem;
+}
+
+.description-banner p{
+    font-size: 1.6rem;
+}
+
+.description-banner i{
+    margin-left: 10px;
+    font-size: 2rem;
+}
+
+.right-banner img{
+    max-width: 500px;
+    transition: all 0.3s;
+}
+
+.right-banner img:hover{
+    transform: scale(1.02);
+}
+
+.box-arrow-down{
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+.box-arrow-down i{
+    text-shadow: 1px 1px 20px #000;
+    opacity: 0.7;
+    transition: all 0.2s;
+}
+
+.box-arrow-down i:hover, .controls-slide i:hover, .btn-cardapio:hover,.active{
+    opacity: 1;
+}
+
+.box-arrow-down{
+    padding: 0 0 4.5rem;
 }
