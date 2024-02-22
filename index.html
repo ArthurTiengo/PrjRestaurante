@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--CSS-->
-    <link rel="stylesheet" href="_css/style.css">
-    <link rel="stylesheet" href="_css/style.css">
-    <!--FONTS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style-responsive.css" />
+
+    <!-- Google FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rum+Raisin&display=swap"
-        rel="stylesheet">
-    <!--FONT WAESOME-->
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rum+Raisin&display=swap"
+        rel="stylesheet" />
+    <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css"
         integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Restaurante</title>
+
+    <title>Restaurante - Feijoada</title>
+
 </head>
 
 <body>
@@ -30,71 +30,83 @@
             <div class="logo">
 
             </div>
-            <div class="btn-menu-moblie">
-                <i class="fas fa-bars"></i>
-            </div>
+        </div>
+        <div class="btn-menu-mobile">
+            <i class="fas fa-bars"></i>
         </div>
         <nav>
             <ul>
                 <li><a class="item-menu" href="#">Home</a></li>
                 <li><a class="item-menu" href="#cardapio">Cardápio</a></li>
-                <div class="d-nome" id="logo">
-                </div>
+                <div class="d-none" id="logo"></div>
                 <li><a class="item-menu" href="#galeria">Galeria</a></li>
                 <li><a class="item-menu" href="#contato">Contato</a></li>
             </ul>
         </nav>
+
     </header>
     <main>
         <div class="slider">
             <div class="container banner">
                 <div class="flex-center-full left-banner">
+                    <!-- adicionar um display flex, e direction em column -->
                     <div class="img-titulo-banner">
-                        <h1>
-                            <img src="_assets/img/frase_banner.svg" alt="frase">
+                        <h1><img src="./assets/img/frase_banner.svg" alt="Experimente nossa feijoada">
                         </h1>
                     </div>
                     <div class="text-center description-banner">
                         <p>Atendimento de Segunda à Sábado das 11h às 15h</p>
                         <p>Fazemos também Delivery ou Retirada</p>
+
                         <a target="_blank"
-                            href="https://api.whatsapp.com/send?phone=5513992133637&text=Ol%C3%A1,gostaria%20de%20fazer%20um%20pedido"><button>Faça
-                                seu pedido <i class="fab fa-whatsapp"></i></button> </a>
+                            href="https://api.whatsapp.com/send?phone=5519971489054&text=Ol%C3%A1,%20gostaria%20de%20fazer%20um%20pedido">
+                            <button>Faça seu pedido<i class="fab fa-whatsapp"></i>
+                            </button>
+                        </a>
                     </div>
                 </div>
+
                 <div class="d-none right-banner">
-                    <img src="_assets/img/feijoada_banner.png" alt="feijoada">
+                    <img src="./assets/img/feijoada_banner.png" alt="feijoada">
                 </div>
             </div>
+
             <div class="container banner" style="display: none;">
-                <div class="flex-center-full left-banner">
+                <div class="flex-center-full left-banner" style="display: none;">
+                    <!-- adicionar um display flex, e direction em column -->
                     <div class="img-titulo-banner">
-                        <h1>
-                            <img src="_assets/img/frase_banner.svg" alt="frase">
+                        <h1><img src="./assets/img/frase_banner.svg" alt="Experimente nossa feijoada">
                         </h1>
                     </div>
                     <div class="text-center description-banner">
                         <p>Atendimento de Segunda à Sábado das 11h às 15h</p>
                         <p>Fazemos também Delivery ou Retirada</p>
+
                         <a target="_blank"
-                            href="https://api.whatsapp.com/send?phone=5513992133637&text=Ol%C3%A1,gostaria%20de%20fazer%20um%20pedido"><button>Faça
-                                seu pedido <i class="fab fa-whatsapp"></i></button> </a>
+                            href="https://api.whatsapp.com/send?phone=5519971489054&text=Ol%C3%A1,%20gostaria%20de%20fazer%20um%20pedido">
+                            <button>Faça seu pedido<i class="fab fa-whatsapp"></i>
+                            </button>
+                        </a>
                     </div>
                 </div>
+
                 <div class="d-none right-banner">
-                    <img src="_assets/img/virado_a_paulista.png" alt="feijoada">
+                    <img src="./assets/img/virado_a_paulista.png" alt="feijoada">
                 </div>
             </div>
+
         </div>
         <div class="controls-slide text-center">
             <i class="slide-1 fas fa-chevron-circle-left"></i>
             <i class="slide-2 fas fa-chevron-circle-right"></i>
+
         </div>
         <div class="box-arrow-down text-center">
             <a href="#cardapio"><i class="fas fa-arrow-down"></i></a>
         </div>
+
         <section class="cardapio">
-            <div class="box-cardapio">
+            <div class="box-cardapio container">
                 <div class="days-week">
                     <h2>Cardápio</h2>
                     <div class="box-btn-cardapio">
@@ -120,27 +132,27 @@
                 </div>
                 <div class="dishes-day">
                     <div class="col-1">
-                        <h3 class="d-none">Pratos o dia</h3>
-                        <div class="box-dish-main"></div>
-                        <div>
-                            <h4>Virado à Paulista</h4>
-                            <div class="box-dish">
-                                <div class="contents-dish-left">
-                                    <p>Prato Feito <small>(Serve 1 Pessoa)</small></p>
-                                    <p>Fit <small>(Serve 1 Pessoa)</small></p>
-                                </div>
-                                <div class="prices-dish-right">
-                                    <p>R$ 30</p>
-                                    <p>R$ 20</p>
+                        <h3 class="d-none">Pratos do Dia</h3>
+                        <div id="box-dish-main">
+                            <div class="first-dish">
+                                <h4>Virado à Paulista</h4>
+                                <div class="contents-box-dish">
+                                    <div class="contents-dish-left">
+                                        <p>Prato Feito <small>(Serve 1 Pessoa)</small></p>
+                                        <p>Fit<small>(Serve 1 Pessoa)</small></p>
+                                    </div>
+                                    <div class="price-dish-right">
+                                        <p>R$ 30</p>
+                                        <p>R$ 20</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="box-dish">
-                                <div>
-                                    <div class="dish">
-                                        <h4>Filé de Frango à parmegiana</h4>
-                                        <div class="contents-box-dish">
-                                            <p>Prato Feito <small>(Serve 1 Pessoa)</small></p>
-                                            <p>Fit <small>(serve 1 pessoa)</small></p>
+                                <div class="dish">
+                                    <h4>Filé de Frango à pargemiana</h4>
+                                    <div class="contents-box-dish">
+                                        <div class="contents-dish-left">
+                                            <p>Prato Feito<small>(Serve 1 Pessoa)</small></p>
                                         </div>
                                         <div class="prices-dish-right">
                                             <p>R$ 21</p>
@@ -154,8 +166,8 @@
                                     <h4>Picadinho</h4>
                                     <div class="contents-box-dish">
                                         <div class="contents-dish-left">
-                                            <p>Prato Feito <small>(Serve 1 Pessoa)</small></p>
-                                            <p>Fit <small>(serve 1 pessoa)</small></p>
+                                            <p>Prato Feito<small>(Serve 1 Pessoa)</small></p>
+                                            <p>Fit<small>(Serve 1 Pessoa)</small></p>
                                         </div>
                                         <div class="prices-dish-right">
                                             <p>R$ 21</p>
@@ -164,13 +176,55 @@
                                     </div>
                                 </div>
                             </div>
+                            <div>
+                            </div>
                         </div>
-                        <div class="right-col col-1"></div>
+                    </div>
+                    <div class="right-col col-1">
+                        <div class="dish">
+                            <h4>Sobremesas</h4>
+                            <div class="contents-box-dish">
+                                <div class="contents-dish-left">
+                                    <p>Pudim Cremoso</p>
+                                    <p>Taça da Felicidade</p>
+                                </div>
+                                <div class="prices-dish-right">
+                                    <p>R$ 8</p>
+                                    <p>R$ 12</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
+            </div>
+
+
+            </div>
+        </section>
+        <section id="galeria">
+            <div class="box-galeria container">
+                <div class="container-fotos">
+                    <h2>Galeria</h2>
+                    <div class="box-fotos">
+                        <img src="./assets/foto/calabresa-acebolado.jpg" alt="" class="img-fluid small-img">
+                        <img src="./assets/foto/macarrao-com-frango.jpg" alt="" class="img-fluid small-img">
+                        <img src="./assets/foto/Feijoada.jpg" alt="" class="img-fluid small-img">
+                        <img src="./assets/foto/feijoada2.jpg" alt="" class="img-fluid small-img">
+                        <img src="./assets/foto/file-a-parmegiana.jpg" alt="" class="img-fluid small-img">
+                        <img src="./assets/foto/macarronada.jpg" alt="" class="img-fluid small-img">
+                        <img src="./assets/foto/ovo-bisteca.jpg" alt="" class="img-fluid small-img">
+                        <img src="./assets/foto/panqueca.jpg" alt="" class="img-fluid small-img">
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+
+
+    <footer>
+    </footer>
+    <script src="https://kit.fontawesome.com/676eccc9ff.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

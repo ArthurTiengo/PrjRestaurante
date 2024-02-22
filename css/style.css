@@ -1,0 +1,434 @@
+/* Resets Gerais */
+* {
+    --wine: #a30404;
+    --yellow: #fed40e;
+    --grey: #e5e5e5;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 93.75%;
+    /* 100% = 16px | 93.75% = 15px */
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+
+    background: var(--wine) url(../assets/img/bg_icons.svg);
+    /* Configura a imagem de fundo fazendo com que ela se movimente junto com a página ou fique fixe */
+    background-attachment: fixed;
+    /* Encaixa a imagem onde ela foi colocada sem repetir e centralizada. */
+    background-size: cover;
+}
+
+/* 
+    em = sempre será relativa ao tamanho à propriedade da classe pai. exemplo: font-size:1em ele irá colocar uma vez o tamanho do elemento pai, caso o pai não tinha um tamanho definido ele irá considerar o padrão do navegador
+que será 16px 
+    rem = sempre será relativa a fonte definida no elemento :root, caso não tenha definida :root irá pegar o padrão do navegador que será 16px
+*/
+.container{
+    width: min(90vw, 800vw);
+    padding-top: 4rem;
+    margin: auto;
+}
+.img-fluid{
+    width: max(14vw, 100px);
+    object-fit: cover;
+}
+.flex-center-full{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.row{
+    flex-direction: row;
+}
+.text-center{
+    text-align: center;
+}
+/* FIM resets gerais */
+
+/* ================ HEADER =================== */
+
+header ul li a{
+    padding: 10px;
+    color:var(--wine);
+    transition: all 0.3s;
+}
+
+header ul li a.item-menu:hover{
+    background: var(--wine);
+    color: var(--yellow);
+}
+
+header{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header ul{
+    background: var(--yellow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2rem;
+    padding: 12px 30px;
+    height: 55px;
+    min-width: 800px;
+
+    
+}
+
+
+header ul li{
+    list-style: none;
+    font-family: "Rum Raisin", sans-serif;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+
+}
+
+
+
+/* =========== LINKS AND BUTTONS ============== */
+a{
+    text-decoration: none;
+}
+
+.box-arrow-down a{
+    color: var(--yellow);
+}
+
+button{
+    background: var(--yellow);
+    cursor: pointer;
+
+    padding: 10px 35px;
+    margin-top: 10px;
+
+    border: none;
+    border-radius: 30px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.87);
+
+    color: var(--wine);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-family: "Rum Raisin", sans-serif;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    background: #fff;
+    color: var(--wine);
+    padding: 10px 50px;
+}
+.btn-cardapio{
+    border: 3px solid var(--yellow);
+    border-radius: 46px;
+    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.87));
+    padding: 8px;
+    margin-top: 40px;
+    width: 160px;
+    max-width: 160px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: all 0.3s;
+}
+
+.btn-cardapio:hover{
+    color: var(--wine);
+    background: var(--yellow);
+    transform: scale(1.05);
+}
+
+
+/* ============= TITULOS ================ */
+
+.titulo-banner h1{
+    font-family: "Rum Raisin", sans-serif;
+    font-weight: normal;
+    font-size: 5rem;
+    color: var(--yellow);
+}
+
+h2,
+h4{
+    font-family: "Rum Raisin", sans-serif;
+    font-weight: normal;
+    color: var(--wine);
+}
+
+h2{
+    color: var(--yellow);
+    text-transform: uppercase;
+    font-size: 3.5rem;
+
+}
+
+.dishes-day .col-1 h3:first-child{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+
+.dishes-day h4{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: var(--wine);
+}
+
+.dishes-day .col-1 #box-dish-main .first-dish h4{
+    color: var(--yellow);
+}
+
+
+/* =============== BANNER ============== */
+
+.slider{
+    display: flex;
+    transition: all ease .4s;
+}
+
+.controls-slide{
+    margin: auto;
+    display: flex;
+    width: 40vw;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.controls-slide i{
+    font-size:2rem;
+    color: var(--yellow);
+    opacity: .6;
+    cursor: pointer;
+    text-shadow: 1px 1px 20px #000;
+    transition: all ease .2s;
+}
+
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 75vh;
+}
+
+.img-titulo-banner img{
+    min-width: 400px;
+
+}
+
+.description-banner{
+    position:relative;
+    top:-30px;
+    max-width: 380px;
+}
+
+.left-banner p{
+    line-height: 44px;
+    letter-spacing: 0.8px;
+    color: #fff;
+    font-family: "Rum Raisin", sans-serif;
+}
+
+
+/* :first-child > seleciona o primeiro filho direto da classe, seria um modo alternativo de selecionar uma parte específica sem precisar dar class
+ntd-child() > permite especificar qual elemento o filho deseja ser selecionado.
+Por exemplo: ntd-child(2) > seleciona o segundo elemento da classe pai*/
+.description-banner p:first-child{
+    font-family: "Rum Raisin", sans-serif;
+    font-size: 1.9rem;
+}
+
+.description-banner p{
+    font-size: 1.6rem
+}
+
+.description-banner i{
+    margin-left: 10px;
+    font-size: 2rem;
+}
+
+.right-banner img{
+    max-width: 500px;
+    transition: all 0.3s;
+}
+
+.right-banner img:hover{
+    transform: scale(1.02);
+}
+
+/* arrows */
+
+.box-arrow-down i{
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+.box-arrow-down i{
+    text-shadow: 1px 1px 20px #000;
+    opacity: 0.7;
+    transition: all 0.2s;
+}
+
+.box-arrow-down i:hover, .controls-slide i:hover, .btn-cardapio:hover, .active{
+    opacity: 1;
+}
+
+.box-arrow-down{
+    padding: 0 0 4.5rem;
+}
+
+
+
+
+/* ==================== SECTION CARDÁPIO ======================= */
+
+.cardapio{
+    background: #e5e5e5 url(../assets/img/bg_icons.svg);
+    background-size: cover;
+    background-attachment: fixed;
+    /* Define se uma imagem irá ROLAR JUNTO (scroll) com o conteúdo ou ficará FIXA(fixed) independentemente da posição colocada. */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+   
+}
+
+.box-cardapio{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 4rem 0;
+}
+
+.days-week{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+
+    background: var(--wine) url(../assets/img/bg_icons.svg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.box-btn-cardapio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-btn-cardapio a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--yellow);
+}
+
+.box-btn-cardapio a:first-child{
+    margin-top: 5px;
+}
+
+.dishes-day{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 140px 60px 50px 20px;
+    background: rgba(229, 229, 229, 0.7);
+}
+
+.dishes-day .col-1{
+    display: flex;
+    flex-direction: column;
+}
+
+#box-dish-main .first-dish{
+    background: var(--wine);
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.contents-box-dish{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contents-box-dish p{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 6px;
+}
+
+.contents-box-dish p small{
+    margin-left: 2px;
+    font-size: 0.8rem;
+}
+
+.dish{
+    padding: 10px 15px;
+    margin-top: 20px;
+}
+
+.dish p{
+    color: #000;
+}
+
+/*=================== Section Gleria ===================*/
+
+.box-galeria,
+.box-equipe{
+    display: flex;
+    justify-content: center;
+    background: #e5e5e5 url(../assets/img/bg_icons.svg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 100px;
+}
+
+.container-fotos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-fotos,
+.box-equipe{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 45px;
+    margin-top: 20px;
+}
+
+.box-galeria img,
+.box-equipe img{
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.box-galeria img:hover{
+    transform: scale(1.05);
+    filter: grayscale(150%);
+}
